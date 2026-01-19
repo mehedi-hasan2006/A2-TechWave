@@ -1,3 +1,8 @@
-.banner-container{
+.banner-container {
     background-image: url('./assets/hero-bg.png');
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
