@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
 
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -61,8 +64,33 @@
     </header>
 
     <main>
-        <section>
+        <!-- hero / banner section  -->
+        <section class="h-[760px]">
+            <div class="banner-container">
+                <div class="flex justify-center items-center pt-[100px]">
+                    <img class="relative" src="./assets/hero-circle.png" alt="microphone bg img">
+                    <img class="absolute" src="./assets/microphone.png" alt="microphone img">
 
+                    <button
+                        class="absolute text-[#1A0B2E] bg-[#00FF88] font-semibold rounded-[20px] py-2 px-4 -mt-[300px] -mr-[220px]">NEW</button>
+                </div>
+
+
+                <div class="text-center">
+                    <h2 class="text-[60px] text-white font-extrabold pt-10 pb-2">TechWave</h2>
+                    <p class="text-white opacity-80  pb-6">Your daily dose of tech insights, productivity hacks, and
+                        personal growth</p>
+
+                    <div class="flex justify-center gap-2 pb-[100px]">
+                        <button
+                            class="text-white font-semibold  px-5 py-3 rounded-[20px] cursor-pointer bg-gradient-to-r from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100"><i
+                                class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                        <button
+                            class="text-[#00FF88] border rounded-[20px] cursor-pointer px-5 py-3 bg-transparent"><img
+                                class="inline pr-2" src="./assets/message.png" alt="">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
 
