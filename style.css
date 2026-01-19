@@ -3,7 +3,9 @@
 }
 
 .about-content,
-.why-choose {
+.why-choose,
+.feature,
+.host-section {
     max-width: 1200px;
     margin: 0 auto;
 }
