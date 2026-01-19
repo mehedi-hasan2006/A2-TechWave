@@ -2,7 +2,8 @@
     background-image: url('./assets/hero-bg.png');
 }
 
-.about-content {
+.about-content,
+.why-choose {
     max-width: 1200px;
     margin: 0 auto;
 }
