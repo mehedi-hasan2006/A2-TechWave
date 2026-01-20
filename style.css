@@ -28,6 +28,10 @@
     padding: 0;
 }
 
+.choose-content:hover{
+    transform: scale(1.02);
+}
+
 footer {
     background-image: url('./assets/footer-bg.png');
     background-size: cover;
@@ -69,6 +73,10 @@ footer {
 
     }
 
+    .about-content {
+        padding: 40px 20px;
+    }
+
     .count {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
@@ -82,9 +90,8 @@ footer {
     .choose-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
+        column-gap: 0;
     }
-
-    .choose-content {}
 
     .feature-content {
         grid-template-columns: repeat(1, 1fr);
@@ -129,7 +136,5 @@ footer {
     .footer-icon img {
         width: 24px;
         height: 24px;
-
-
     }
 }
