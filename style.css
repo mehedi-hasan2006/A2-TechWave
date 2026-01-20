@@ -1,11 +1,21 @@
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .banner-container {
     background-image: url('./assets/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-content,
 .why-choose,
 .feature,
-.host-section {
+.host-section,
+.count {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -15,11 +25,15 @@
 }
 
 .count {
-    margin: 0 auto;
+    padding: 0;
 }
 
 footer {
     background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
 }
 
 /* Responsive Media Query  */
@@ -34,7 +48,8 @@ footer {
 
     .hamburger-menu {
         display: inline;
-        margin-right: 100px;
+        width: 24px;
+        height: 24px;
     }
 
     .nav-menu {
@@ -56,7 +71,7 @@ footer {
 
     .count {
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 40px;
+        row-gap: 40px;
 
     }
 
@@ -94,5 +109,27 @@ footer {
 
     .host-icon {
         justify-content: center;
+    }
+
+    /* footer section  */
+    footer {
+        background-size: ;
+    }
+
+    .footer-img {
+        width: 220px;
+    }
+
+    .footer-icon {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .footer-icon img {
+        width: 24px;
+        height: 24px;
+
+
     }
 }
