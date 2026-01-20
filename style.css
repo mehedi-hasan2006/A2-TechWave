@@ -10,6 +10,89 @@
     margin: 0 auto;
 }
 
-footer{
+.hamburger-menu {
+    display: none;
+}
+
+.count {
+    margin: 0 auto;
+}
+
+footer {
     background-image: url('./assets/footer-bg.png');
+}
+
+/* Responsive Media Query  */
+
+@media screen and (max-width: 576px) {
+
+    /* navbar */
+    nav {
+        padding: 18px 20px;
+        max-width: 576px;
+    }
+
+    .hamburger-menu {
+        display: inline;
+        margin-right: 100px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    /*  hero / banner section  */
+
+    .banner-container {
+        padding: 40px 20px;
+        width: 100%;
+
+
+    }
+
+    .count {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 40px;
+
+    }
+
+    .why-choose h1 {
+        padding: 40px 20px 16px 20px;
+    }
+
+    .choose-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .choose-content {}
+
+    .feature-content {
+        grid-template-columns: repeat(1, 1fr);
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .host-details {
+        margin: 24px 20px 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-details .host-img {
+        width: 150px;
+    }
+
+    .host-img-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .host-icon {
+        justify-content: center;
+    }
 }

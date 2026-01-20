@@ -33,7 +33,7 @@
     <header class="bg-[#412567]">
 
         <!-- Navbar section  -->
-        <nav class="w-[1200px] flex justify-between py-6 mx-auto ">
+        <nav class="w-[1200px]  flex justify-between py-6 mx-auto ">
             <!-- <div class="text-white text-5xl font-bold">
                 <span>Tech </span><span class="text-[#FB09B4] ">Wave</span>
             </div> -->
@@ -42,7 +42,7 @@
             </div>
 
             <!-- nav menu  -->
-            <div class="flex items-center">
+            <div class="flex items-center nav-menu ">
                 <ul class="flex">
                     <li class="mr-8 text-white font-medium hover:text-[#FB09B4] hover:font-bold"> <a href="">About</a>
                     </li>
@@ -54,11 +54,17 @@
             </div>
 
             <!-- navbar button  -->
-            <div>
+            <div class="nav-btn">
                 <button
                     class="text-white font-semibold  px-3 py-4 rounded-[20px] cursor-pointer bg-gradient-to-r from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100">Subscribe
                     <i class="fa-solid fa-arrow-right"></i></button>
             </div>
+
+            <div>
+                <img class="hamburger-menu" src="./assets/hamburger-menu.png" alt="">
+            </div>
+
+
         </nav>
         <hr class="text-white opacity-10">
     </header>
@@ -76,7 +82,7 @@
                 </div>
 
 
-                <div class="text-center">
+                <div class="text-center banner-text">
                     <h2 class="text-[60px] text-white font-extrabold pt-10 pb-2">TechWave</h2>
                     <p class="text-white opacity-80  pb-6">Your daily dose of tech insights, productivity hacks, and
                         personal growth</p>
@@ -111,21 +117,21 @@
 
 
 
-                <div class="flex justify-between ">
+                <div class="grid grid-cols-4 justify-between  count">
                     <div>
-                        <h1 class="text-[#00FF88] text-[48px] font-bold text-center">150K+</h1>
+                        <h1 class="text-[#00FF88] text-[48px] font-bold ">150K+</h1>
                         <p class="text-white text-[16px]/[24px] ">Monthly Listeners</p>
                     </div>
                     <div>
-                        <h1 class="text-[#00FF88] text-[48px] font-bold text-center">200+</h1>
+                        <h1 class="text-[#00FF88] text-[48px] font-bold ">200+</h1>
                         <p class="text-white text-[16px]/[24px] ">Episodes Published</p>
                     </div>
                     <div>
-                        <h1 class="text-[#00FF88] text-[48px] font-bold text-center">4.9 ★</h1>
+                        <h1 class="text-[#00FF88] text-[48px] font-bold ">4.9 ★</h1>
                         <p class="text-white text-[16px]/[24px] ">Average Rating</p>
                     </div>
                     <div>
-                        <h1 class="text-[#00FF88] text-[48px] font-bold text-center">50+</h1>
+                        <h1 class="text-[#00FF88] text-[48px] font-bold ">50+</h1>
                         <p class="text-white text-[16px]/[24px] ">Industry Experts</p>
                     </div>
                 </div>
@@ -137,8 +143,8 @@
             <div class="why-choose pb-[120px]">
                 <h1 class="text-white text-[48px] text-center pt-[120px] pb-10 font-bold"> Why Choose TechWave</h1>
 
-                <div class="choose-content grid grid-cols-3 gap-[30px]">
-                    <div class="bg-[#351165] px-10 py-[100px] rounded-[40px] row-span-2">
+                <div class="grid grid-cols-3 gap-[30px] choose-container">
+                    <div class="bg-[#351165] px-10 py-[100px] rounded-[40px] row-span-2  choose-content">
                         <img src="./assets/headphone.png" alt="">
                         <h2 class="text-white text-[24px] font-bold py-4 ">Premium Audio Quality</h2>
                         <p class="text-white text-[16px]/[24px] opacity-60 ">Experience crystal-clear sound with
@@ -182,7 +188,7 @@
             <div class="feature py-[120px]">
                 <h1 class="text-white text-[48px] text-center  pb-10 font-bold">Featured Episodes</h1>
 
-                <div class="grid grid-cols-3 gap-[30px]">
+                <div class="grid grid-cols-3 gap-[30px] feature-content">
                     <div class="bg-[#250D44] rounded-[15px]">
                         <iframe width="380" height="214" class="rounded-t-[15px]"
                             src="https://www.youtube.com/embed/1IxG7ywSNXk?si=y9w1fnnXZLgHfdj3"
@@ -251,9 +257,9 @@
             <div class="host-section pb-[120px]">
                 <h1 class="text-white text-center text-[48px] font-bold pb-10">Meet the Host</h1>
 
-                <div class="flex gap-6 bg-[#351165] px-10 py-10 rounded-[40px] ">
-                    <div>
-                        <img class="w-[400px] " src="./assets/host.png" alt="host photo">
+                <div class="flex gap-6 bg-[#351165] px-10 py-10 rounded-[40px] host-details">
+                    <div class="host-img-box">
+                        <img class="w-[400px] host-img" src="./assets/host.png" alt="host photo">
                     </div>
                     <div>
                         <h1 class="text-white text-[32px] font-bold">Alex Kumar</h1>
@@ -263,7 +269,7 @@
                             TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
                             to grow in tech.</p>
 
-                        <div class="flex gap-2 pt-4">
+                        <div class="flex gap-2 pt-4 host-icon">
                             <div class="border-3 border-[#533C72] rounded-[50%] py-2.5 px-2.5">
                                 <img src="./assets/linkedin.png" alt="instragram">
                             </div>
